@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20221025 11:43:59.589" rpa="true" schemaversion="3">
+<suite id="s1" name="Robot Tests" source="C:\Users\jompp\Desktop\ohjelmistotestaus\ohjelmistotestaus_lp\robot_tests">
+<suite id="s1-s1" name="Smoketesting" source="C:\Users\jompp\Desktop\ohjelmistotestaus\ohjelmistotestaus_lp\robot_tests\smoketesting.robot">
+<test id="s1-s1-t1" name="Savutesti 2" line="17">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_etusivu}</arg>
+<arg>Chrome</arg>
+<arg>executable_path=C:/Users/jompp/Desktop/ohjelmistotestaus/ohjelmistotestaus_lp/robot_tests/chromedriver.exe</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221025 11:43:59.949" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
+<status status="PASS" starttime="20221025 11:43:59.949" endtime="20221025 11:44:01.874"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221025 11:44:03.889" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221025 11:44:01.875" endtime="20221025 11:44:03.889"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/header/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 11:44:03.890" level="INFO">Clicking element 'xpath:/html/body/div/header/a[2]'.</msg>
+<status status="PASS" starttime="20221025 11:44:03.889" endtime="20221025 11:44:03.949"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221025 11:44:08.964" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221025 11:44:03.950" endtime="20221025 11:44:08.964"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/aside/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221025 11:44:08.965" level="INFO">Clicking element 'xpath:/html/body/div/aside/button'.</msg>
+<status status="PASS" starttime="20221025 11:44:08.964" endtime="20221025 11:44:09.065"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221025 11:44:14.069" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221025 11:44:09.065" endtime="20221025 11:44:14.069"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/aside/div/div[2]/div[1]/div/span/span[3]</arg>
+<arg>stale(1)</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20221025 11:44:14.362" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221025 11:44:14.363" level="FAIL">Element 'xpath:/html/body/div/aside/div/div[2]/div[1]/div/span/span[3]' should have contained text 'stale(1)' but its text was 'stale
+(1)'.</msg>
+<status status="FAIL" starttime="20221025 11:44:14.069" endtime="20221025 11:44:14.364"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221025 11:44:14.365" endtime="20221025 11:44:14.365"/>
+</kw>
+<status status="FAIL" starttime="20221025 11:43:59.948" endtime="20221025 11:44:14.366">Element 'xpath:/html/body/div/aside/div/div[2]/div[1]/div/span/span[3]' should have contained text 'stale(1)' but its text was 'stale
+(1)'.</status>
+</test>
+<status status="FAIL" starttime="20221025 11:43:59.622" endtime="20221025 11:44:14.368"/>
+</suite>
+<status status="FAIL" starttime="20221025 11:43:59.592" endtime="20221025 11:44:14.371"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robot Tests">Robot Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Smoketesting">Robot Tests.Smoketesting</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
