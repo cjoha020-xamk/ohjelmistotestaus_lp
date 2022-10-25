@@ -1,59 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20221025 11:59:37.240" rpa="true" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20221025 14:00:21.064" rpa="true" schemaversion="3">
 <suite id="s1" name="Ohjelmistotestaus Lp" source="C:\Users\jompp\Desktop\ohjelmistotestaus\ohjelmistotestaus_lp">
 <suite id="s1-s1" name="Robot Tests" source="C:\Users\jompp\Desktop\ohjelmistotestaus\ohjelmistotestaus_lp\robot_tests">
 <suite id="s1-s1-s1" name="Smoketesting" source="C:\Users\jompp\Desktop\ohjelmistotestaus\ohjelmistotestaus_lp\robot_tests\smoketesting.robot">
-<test id="s1-s1-s1-t1" name="Savutesti 2" line="17">
+<test id="s1-s1-s1-t1" name="Projektin edit ikkunan avaus" line="69">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url_projektit}</arg>
 <arg>Chrome</arg>
 <arg>executable_path=C:/Users/jompp/Desktop/ohjelmistotestaus/ohjelmistotestaus_lp/robot_tests/chromedriver.exe</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221025 11:59:37.787" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/projects/'.</msg>
-<status status="PASS" starttime="20221025 11:59:37.785" endtime="20221025 11:59:39.664"/>
+<msg timestamp="20221025 14:00:21.690" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/projects/'.</msg>
+<status status="PASS" starttime="20221025 14:00:21.689" endtime="20221025 14:00:23.696"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221025 11:59:44.680" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20221025 11:59:39.665" endtime="20221025 11:59:44.681"/>
+<msg timestamp="20221025 14:00:28.701" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221025 14:00:23.697" endtime="20221025 14:00:28.702"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath:/html/body/div/aside/button</arg>
+<arg>xpath:/html/body/div/div/div[1]/div[1]/div/section/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221025 11:59:44.683" level="INFO">Clicking element 'xpath:/html/body/div/aside/button'.</msg>
-<status status="PASS" starttime="20221025 11:59:44.682" endtime="20221025 11:59:44.795"/>
+<msg timestamp="20221025 14:00:28.705" level="INFO">Clicking element 'xpath:/html/body/div/div/div[1]/div[1]/div/section/button'.</msg>
+<status status="PASS" starttime="20221025 14:00:28.703" endtime="20221025 14:00:28.783"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221025 11:59:49.801" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20221025 11:59:44.796" endtime="20221025 11:59:49.802"/>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div/div[1]/div[1]/form</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221025 14:00:28.802" level="INFO">Current page contains element 'xpath:/html/body/div/div/div[1]/div[1]/form'.</msg>
+<status status="PASS" starttime="20221025 14:00:28.784" endtime="20221025 14:00:28.805"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath:/html/body/div/aside/div/div[2]/div[2]/div</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221025 11:59:49.804" level="INFO">Clicking element 'xpath:/html/body/div/aside/div/div[2]/div[2]/div'.</msg>
-<status status="PASS" starttime="20221025 11:59:49.803" endtime="20221025 11:59:49.915"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>xpath:/html/body/div/aside/div/div[3]/div[6]/div/button</arg>
-<arg>▶ Data</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20221025 11:59:49.945" level="INFO">Element 'xpath:/html/body/div/aside/div/div[3]/div[6]/div/button' contains text '▶ Data'.</msg>
-<status status="PASS" starttime="20221025 11:59:49.916" endtime="20221025 11:59:49.946"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221025 11:59:49.947" endtime="20221025 11:59:52.092"/>
+<status status="PASS" starttime="20221025 14:00:28.807" endtime="20221025 14:00:31.022"/>
 </kw>
-<status status="PASS" starttime="20221025 11:59:37.783" endtime="20221025 11:59:52.093"/>
+<doc>kokeillaan avata projektin edit ikkuna, kuitenkaan muokkaamatta mitään</doc>
+<status status="PASS" starttime="20221025 14:00:21.686" endtime="20221025 14:00:31.023"/>
 </test>
-<status status="PASS" starttime="20221025 11:59:37.484" endtime="20221025 11:59:52.095"/>
+<doc>Savutestaus</doc>
+<status status="PASS" starttime="20221025 14:00:21.347" endtime="20221025 14:00:31.025"/>
 </suite>
-<status status="PASS" starttime="20221025 11:59:37.469" endtime="20221025 11:59:52.099"/>
+<status status="PASS" starttime="20221025 14:00:21.341" endtime="20221025 14:00:31.030"/>
 </suite>
-<status status="PASS" starttime="20221025 11:59:37.434" endtime="20221025 11:59:52.102"/>
+<status status="PASS" starttime="20221025 14:00:21.303" endtime="20221025 14:00:31.033"/>
 </suite>
 <statistics>
 <total>
