@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20221026 12:48:09.828" rpa="true" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20221028 10:06:06.039" rpa="true" schemaversion="3">
 <suite id="s1" name="Ohjelmistotestaus Lp" source="C:\Users\jompp\Desktop\ohjelmistotestaus\ohjelmistotestaus_lp">
 <suite id="s1-s1" name="Robot Tests" source="C:\Users\jompp\Desktop\ohjelmistotestaus\ohjelmistotestaus_lp\robot_tests">
 <suite id="s1-s1-s1" name="Jarjestelmatestaus" source="C:\Users\jompp\Desktop\ohjelmistotestaus\ohjelmistotestaus_lp\robot_tests\jarjestelmatestaus.robot">
@@ -7,9 +7,9 @@
 <arg>python</arg>
 <arg>C:/Users/jompp/Desktop/ohjelmistotestaus/ohjelmistotestaus_lp/robot_tests/runApi.py</arg>
 <doc>Starts a new process on background.</doc>
-<msg timestamp="20221026 12:48:10.366" level="INFO">Starting process:
+<msg timestamp="20221028 10:06:06.593" level="INFO">Starting process:
 python C:/Users/jompp/Desktop/ohjelmistotestaus/ohjelmistotestaus_lp/robot_tests/runApi.py</msg>
-<status status="PASS" starttime="20221026 12:48:10.364" endtime="20221026 12:48:10.381"/>
+<status status="PASS" starttime="20221028 10:06:06.592" endtime="20221028 10:06:06.608"/>
 </kw>
 <test id="s1-s1-s1-t1" name="Budjetin virhesyöte" line="12">
 <kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
@@ -17,281 +17,335 @@ python C:/Users/jompp/Desktop/ohjelmistotestaus/ohjelmistotestaus_lp/robot_tests
 <arg>Chrome</arg>
 <arg>executable_path=C:/Users/jompp/Desktop/ohjelmistotestaus/ohjelmistotestaus_lp/robot_tests/chromedriver.exe</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221026 12:48:10.390" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/projects/'.</msg>
-<status status="PASS" starttime="20221026 12:48:10.388" endtime="20221026 12:48:12.303"/>
+<msg timestamp="20221028 10:06:06.614" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/projects/'.</msg>
+<status status="PASS" starttime="20221028 10:06:06.611" endtime="20221028 10:06:08.490"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div[1]/div[1]/div/section/button</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221026 12:48:12.304" endtime="20221026 12:48:15.479"/>
+<status status="PASS" starttime="20221028 10:06:08.491" endtime="20221028 10:06:11.654"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div[1]/div[1]/div/section/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221026 12:48:15.480" level="INFO">Clicking element 'xpath:/html/body/div/div/div[1]/div[1]/div/section/button'.</msg>
-<status status="PASS" starttime="20221026 12:48:15.479" endtime="20221026 12:48:15.608"/>
+<msg timestamp="20221028 10:06:11.656" level="INFO">Clicking element 'xpath:/html/body/div/div/div[1]/div[1]/div/section/button'.</msg>
+<status status="PASS" starttime="20221028 10:06:11.655" endtime="20221028 10:06:11.764"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div[1]/div[1]/form/input[2]</arg>
 <arg>E+Q+R+T+Å+ä+ö</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20221026 12:48:15.611" level="INFO">Sending key(s) ('E+Q+R+T+Å+ä+ö',) to xpath:/html/body/div/div/div[1]/div[1]/form/input[2] element.</msg>
-<msg timestamp="20221026 12:48:16.029" level="INFO">Sending key E</msg>
-<msg timestamp="20221026 12:48:16.031" level="INFO">Sending key Q</msg>
-<msg timestamp="20221026 12:48:16.033" level="INFO">Sending key R</msg>
-<msg timestamp="20221026 12:48:16.035" level="INFO">Sending key T</msg>
-<msg timestamp="20221026 12:48:16.037" level="INFO">Sending key Å</msg>
-<msg timestamp="20221026 12:48:16.038" level="INFO">Sending key ä</msg>
-<msg timestamp="20221026 12:48:16.039" level="INFO">Sending key ö</msg>
-<status status="PASS" starttime="20221026 12:48:15.609" endtime="20221026 12:48:16.071"/>
+<msg timestamp="20221028 10:06:11.766" level="INFO">Sending key(s) ('E+Q+R+T+Å+ä+ö',) to xpath:/html/body/div/div/div[1]/div[1]/form/input[2] element.</msg>
+<msg timestamp="20221028 10:06:12.172" level="INFO">Sending key E</msg>
+<msg timestamp="20221028 10:06:12.174" level="INFO">Sending key Q</msg>
+<msg timestamp="20221028 10:06:12.175" level="INFO">Sending key R</msg>
+<msg timestamp="20221028 10:06:12.177" level="INFO">Sending key T</msg>
+<msg timestamp="20221028 10:06:12.178" level="INFO">Sending key Å</msg>
+<msg timestamp="20221028 10:06:12.180" level="INFO">Sending key ä</msg>
+<msg timestamp="20221028 10:06:12.182" level="INFO">Sending key ö</msg>
+<status status="PASS" starttime="20221028 10:06:11.765" endtime="20221028 10:06:12.210"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221026 12:48:17.084" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20221026 12:48:16.072" endtime="20221026 12:48:17.086"/>
+<msg timestamp="20221028 10:06:13.226" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221028 10:06:12.211" endtime="20221028 10:06:13.227"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p</arg>
 <arg>Budget must be more than $0.</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20221026 12:48:17.115" level="INFO">Element 'xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p' contains text 'Budget must be more than $0.'.</msg>
-<status status="PASS" starttime="20221026 12:48:17.087" endtime="20221026 12:48:17.118"/>
+<msg timestamp="20221028 10:06:13.256" level="INFO">Element 'xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p' contains text 'Budget must be more than $0.'.</msg>
+<status status="PASS" starttime="20221028 10:06:13.228" endtime="20221028 10:06:13.258"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div/div[1]/div[1]/form/div/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221028 10:06:13.260" level="INFO">Clicking button 'xpath:/html/body/div/div/div[1]/div[1]/form/div/button[1]'.</msg>
+<status status="PASS" starttime="20221028 10:06:13.259" endtime="20221028 10:06:13.325"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div/div[1]/div[1]/form</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221028 10:06:13.352" level="INFO">Element 'xpath:/html/body/div/div/div[1]/div[1]/form' is displayed.</msg>
+<status status="PASS" starttime="20221028 10:06:13.325" endtime="20221028 10:06:13.355"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221026 12:48:17.119" endtime="20221026 12:48:19.264"/>
+<status status="PASS" starttime="20221028 10:06:13.356" endtime="20221028 10:06:15.495"/>
 </kw>
 <doc>Annetaan edit-valikossa budjetti kohdalle "väärä" syöte ja odotetaan vastaukseksi oikeanlaista virheilmoitusta, jossa kerrotaan että budjetin oltava yli 0$</doc>
-<status status="PASS" starttime="20221026 12:48:10.382" endtime="20221026 12:48:19.265"/>
+<status status="PASS" starttime="20221028 10:06:06.609" endtime="20221028 10:06:15.496"/>
 </test>
-<test id="s1-s1-s1-t2" name="Projektin nimen puuttuminen" line="26">
+<test id="s1-s1-s1-t2" name="Projektin nimen puuttuminen" line="30">
 <kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
 <arg>${url_projektit}</arg>
 <arg>Chrome</arg>
 <arg>executable_path=C:/Users/jompp/Desktop/ohjelmistotestaus/ohjelmistotestaus_lp/robot_tests/chromedriver.exe</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221026 12:48:19.270" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/projects/'.</msg>
-<status status="PASS" starttime="20221026 12:48:19.269" endtime="20221026 12:48:21.067"/>
+<msg timestamp="20221028 10:06:15.502" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/projects/'.</msg>
+<status status="PASS" starttime="20221028 10:06:15.501" endtime="20221028 10:06:17.342"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div[1]/div[1]/div/section/button</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221026 12:48:21.068" endtime="20221026 12:48:23.507"/>
+<status status="PASS" starttime="20221028 10:06:17.343" endtime="20221028 10:06:19.797"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div[1]/div[1]/div/section/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221026 12:48:23.509" level="INFO">Clicking element 'xpath:/html/body/div/div/div[1]/div[1]/div/section/button'.</msg>
-<status status="PASS" starttime="20221026 12:48:23.508" endtime="20221026 12:48:23.629"/>
+<msg timestamp="20221028 10:06:19.799" level="INFO">Clicking element 'xpath:/html/body/div/div/div[1]/div[1]/div/section/button'.</msg>
+<status status="PASS" starttime="20221028 10:06:19.798" endtime="20221028 10:06:19.891"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>name=name</arg>
 <arg>CTRL+a</arg>
 <arg>BACKSPACE</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20221026 12:48:23.631" level="INFO">Sending key(s) ('CTRL+a', 'BACKSPACE') to name=name element.</msg>
-<msg timestamp="20221026 12:48:24.068" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20221026 12:48:24.070" level="INFO">Sending key a</msg>
-<msg timestamp="20221026 12:48:24.072" level="INFO">Releasing special key CONTROL.</msg>
-<msg timestamp="20221026 12:48:24.088" level="INFO">Pressing special key BACKSPACE to element.</msg>
-<msg timestamp="20221026 12:48:24.093" level="INFO">Releasing special key BACKSPACE.</msg>
-<status status="PASS" starttime="20221026 12:48:23.629" endtime="20221026 12:48:24.115"/>
+<msg timestamp="20221028 10:06:19.896" level="INFO">Sending key(s) ('CTRL+a', 'BACKSPACE') to name=name element.</msg>
+<msg timestamp="20221028 10:06:20.316" level="INFO">Pressing special key CONTROL down.</msg>
+<msg timestamp="20221028 10:06:20.318" level="INFO">Sending key a</msg>
+<msg timestamp="20221028 10:06:20.322" level="INFO">Releasing special key CONTROL.</msg>
+<msg timestamp="20221028 10:06:20.333" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20221028 10:06:20.335" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20221028 10:06:19.892" endtime="20221028 10:06:20.351"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221026 12:48:25.132" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20221026 12:48:24.117" endtime="20221026 12:48:25.134"/>
+<msg timestamp="20221028 10:06:21.366" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221028 10:06:20.353" endtime="20221028 10:06:21.367"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p</arg>
 <arg>${nimenpuuttuminen_virhe}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20221026 12:48:25.161" level="INFO">Element 'xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p' contains text 'Name is required'.</msg>
-<status status="PASS" starttime="20221026 12:48:25.134" endtime="20221026 12:48:25.162"/>
+<msg timestamp="20221028 10:06:21.397" level="INFO">Element 'xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p' contains text 'Name is required'.</msg>
+<status status="PASS" starttime="20221028 10:06:21.369" endtime="20221028 10:06:21.398"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div/div[1]/div[1]/form/div/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221028 10:06:21.400" level="INFO">Clicking button 'xpath:/html/body/div/div/div[1]/div[1]/form/div/button[1]'.</msg>
+<status status="PASS" starttime="20221028 10:06:21.399" endtime="20221028 10:06:21.467"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div/div[1]/div[1]/form</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221028 10:06:21.495" level="INFO">Element 'xpath:/html/body/div/div/div[1]/div[1]/form' is displayed.</msg>
+<status status="PASS" starttime="20221028 10:06:21.468" endtime="20221028 10:06:21.496"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221026 12:48:25.162" endtime="20221026 12:48:27.313"/>
+<status status="PASS" starttime="20221028 10:06:21.497" endtime="20221028 10:06:23.636"/>
 </kw>
 <doc>Tyhjennetään projektin nimi ja tarkistetaan annetaanko oikea virheilmoitus nimen puuttumisesta</doc>
-<status status="PASS" starttime="20221026 12:48:19.267" endtime="20221026 12:48:27.314"/>
+<status status="PASS" starttime="20221028 10:06:15.498" endtime="20221028 10:06:23.637"/>
 </test>
-<test id="s1-s1-s1-t3" name="Projektin nimi liian lyhyt" line="40">
+<test id="s1-s1-s1-t3" name="Projektin nimi liian lyhyt" line="48">
 <kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
 <arg>${url_projektit}</arg>
 <arg>Chrome</arg>
 <arg>executable_path=C:/Users/jompp/Desktop/ohjelmistotestaus/ohjelmistotestaus_lp/robot_tests/chromedriver.exe</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221026 12:48:27.320" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/projects/'.</msg>
-<status status="PASS" starttime="20221026 12:48:27.319" endtime="20221026 12:48:29.125"/>
+<msg timestamp="20221028 10:06:23.643" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/projects/'.</msg>
+<status status="PASS" starttime="20221028 10:06:23.641" endtime="20221028 10:06:25.455"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div[1]/div[1]/div/section/button</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221026 12:48:29.127" endtime="20221026 12:48:31.575"/>
+<status status="PASS" starttime="20221028 10:06:25.456" endtime="20221028 10:06:27.920"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div[1]/div[1]/div/section/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221026 12:48:31.576" level="INFO">Clicking element 'xpath:/html/body/div/div/div[1]/div[1]/div/section/button'.</msg>
-<status status="PASS" starttime="20221026 12:48:31.576" endtime="20221026 12:48:31.673"/>
+<msg timestamp="20221028 10:06:27.922" level="INFO">Clicking element 'xpath:/html/body/div/div/div[1]/div[1]/div/section/button'.</msg>
+<status status="PASS" starttime="20221028 10:06:27.920" endtime="20221028 10:06:28.026"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>name=name</arg>
 <arg>CTRL+a</arg>
 <arg>BACKSPACE</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20221026 12:48:31.676" level="INFO">Sending key(s) ('CTRL+a', 'BACKSPACE') to name=name element.</msg>
-<msg timestamp="20221026 12:48:32.111" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20221026 12:48:32.114" level="INFO">Sending key a</msg>
-<msg timestamp="20221026 12:48:32.117" level="INFO">Releasing special key CONTROL.</msg>
-<msg timestamp="20221026 12:48:32.127" level="INFO">Pressing special key BACKSPACE to element.</msg>
-<msg timestamp="20221026 12:48:32.130" level="INFO">Releasing special key BACKSPACE.</msg>
-<status status="PASS" starttime="20221026 12:48:31.674" endtime="20221026 12:48:32.145"/>
+<msg timestamp="20221028 10:06:28.029" level="INFO">Sending key(s) ('CTRL+a', 'BACKSPACE') to name=name element.</msg>
+<msg timestamp="20221028 10:06:28.446" level="INFO">Pressing special key CONTROL down.</msg>
+<msg timestamp="20221028 10:06:28.447" level="INFO">Sending key a</msg>
+<msg timestamp="20221028 10:06:28.451" level="INFO">Releasing special key CONTROL.</msg>
+<msg timestamp="20221028 10:06:28.466" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20221028 10:06:28.469" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20221028 10:06:28.027" endtime="20221028 10:06:28.481"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221026 12:48:33.154" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20221026 12:48:32.147" endtime="20221026 12:48:33.156"/>
+<msg timestamp="20221028 10:06:29.488" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221028 10:06:28.483" endtime="20221028 10:06:29.489"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>name=name</arg>
 <arg>Ä</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20221026 12:48:33.158" level="INFO">Sending key(s) ('Ä',) to name=name element.</msg>
-<msg timestamp="20221026 12:48:33.436" level="INFO">Sending key Ä</msg>
-<status status="PASS" starttime="20221026 12:48:33.157" endtime="20221026 12:48:33.452"/>
+<msg timestamp="20221028 10:06:29.492" level="INFO">Sending key(s) ('Ä',) to name=name element.</msg>
+<msg timestamp="20221028 10:06:29.772" level="INFO">Sending key Ä</msg>
+<status status="PASS" starttime="20221028 10:06:29.490" endtime="20221028 10:06:29.786"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p</arg>
 <arg>${nimilyhyt_virhe}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20221026 12:48:33.484" level="INFO">Element 'xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p' contains text 'Name needs to be at least 3 characters.'.</msg>
-<status status="PASS" starttime="20221026 12:48:33.453" endtime="20221026 12:48:33.485"/>
+<msg timestamp="20221028 10:06:29.811" level="INFO">Element 'xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p' contains text 'Name needs to be at least 3 characters.'.</msg>
+<status status="PASS" starttime="20221028 10:06:29.786" endtime="20221028 10:06:29.812"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>name=name</arg>
 <arg>Ö</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20221026 12:48:33.488" level="INFO">Sending key(s) ('Ö',) to name=name element.</msg>
-<msg timestamp="20221026 12:48:33.781" level="INFO">Sending key Ö</msg>
-<status status="PASS" starttime="20221026 12:48:33.486" endtime="20221026 12:48:33.793"/>
+<msg timestamp="20221028 10:06:29.815" level="INFO">Sending key(s) ('Ö',) to name=name element.</msg>
+<msg timestamp="20221028 10:06:30.088" level="INFO">Sending key Ö</msg>
+<status status="PASS" starttime="20221028 10:06:29.813" endtime="20221028 10:06:30.101"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p</arg>
 <arg>${nimilyhyt_virhe}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20221026 12:48:33.810" level="INFO">Element 'xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p' contains text 'Name needs to be at least 3 characters.'.</msg>
-<status status="PASS" starttime="20221026 12:48:33.794" endtime="20221026 12:48:33.813"/>
+<msg timestamp="20221028 10:06:30.119" level="INFO">Element 'xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p' contains text 'Name needs to be at least 3 characters.'.</msg>
+<status status="PASS" starttime="20221028 10:06:30.102" endtime="20221028 10:06:30.121"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div/div[1]/div[1]/form/div/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221028 10:06:30.123" level="INFO">Clicking button 'xpath:/html/body/div/div/div[1]/div[1]/form/div/button[1]'.</msg>
+<status status="PASS" starttime="20221028 10:06:30.122" endtime="20221028 10:06:30.193"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div/div[1]/div[1]/form</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221028 10:06:30.222" level="INFO">Element 'xpath:/html/body/div/div/div[1]/div[1]/form' is displayed.</msg>
+<status status="PASS" starttime="20221028 10:06:30.194" endtime="20221028 10:06:30.224"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221026 12:48:33.814" endtime="20221026 12:48:35.955"/>
+<status status="PASS" starttime="20221028 10:06:30.225" endtime="20221028 10:06:32.374"/>
 </kw>
 <doc>Tyhjennetään projektin nimi ja tarkistetaan että kahden ensimmäisen syötetyn merkin jälkeen saadaan virheilmoitus siitä että projektin nimi on liian lyhyt</doc>
-<status status="PASS" starttime="20221026 12:48:27.317" endtime="20221026 12:48:35.956"/>
+<status status="PASS" starttime="20221028 10:06:23.639" endtime="20221028 10:06:32.375"/>
 </test>
-<test id="s1-s1-s1-t4" name="Projektin kuvauksen puuttuminen" line="60">
+<test id="s1-s1-s1-t4" name="Projektin kuvauksen puuttuminen" line="72">
 <kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
 <arg>${url_projektit}</arg>
 <arg>Chrome</arg>
 <arg>executable_path=C:/Users/jompp/Desktop/ohjelmistotestaus/ohjelmistotestaus_lp/robot_tests/chromedriver.exe</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221026 12:48:35.962" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/projects/'.</msg>
-<status status="PASS" starttime="20221026 12:48:35.960" endtime="20221026 12:48:37.798"/>
+<msg timestamp="20221028 10:06:32.380" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/projects/'.</msg>
+<status status="PASS" starttime="20221028 10:06:32.379" endtime="20221028 10:06:34.198"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div[1]/div[1]/div/section/button</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221026 12:48:37.799" endtime="20221026 12:48:40.238"/>
+<status status="PASS" starttime="20221028 10:06:34.200" endtime="20221028 10:06:36.668"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div[1]/div[1]/div/section/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221026 12:48:40.240" level="INFO">Clicking element 'xpath:/html/body/div/div/div[1]/div[1]/div/section/button'.</msg>
-<status status="PASS" starttime="20221026 12:48:40.239" endtime="20221026 12:48:40.355"/>
+<msg timestamp="20221028 10:06:36.669" level="INFO">Clicking element 'xpath:/html/body/div/div/div[1]/div[1]/div/section/button'.</msg>
+<status status="PASS" starttime="20221028 10:06:36.668" endtime="20221028 10:06:36.762"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div[1]/div[1]/form/textarea</arg>
 <arg>CTRL+a</arg>
 <arg>BACKSPACE</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20221026 12:48:40.357" level="INFO">Sending key(s) ('CTRL+a', 'BACKSPACE') to xpath:/html/body/div/div/div[1]/div[1]/form/textarea element.</msg>
-<msg timestamp="20221026 12:48:40.809" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20221026 12:48:40.813" level="INFO">Sending key a</msg>
-<msg timestamp="20221026 12:48:40.816" level="INFO">Releasing special key CONTROL.</msg>
-<msg timestamp="20221026 12:48:40.828" level="INFO">Pressing special key BACKSPACE to element.</msg>
-<msg timestamp="20221026 12:48:40.831" level="INFO">Releasing special key BACKSPACE.</msg>
-<status status="PASS" starttime="20221026 12:48:40.356" endtime="20221026 12:48:40.848"/>
+<msg timestamp="20221028 10:06:36.765" level="INFO">Sending key(s) ('CTRL+a', 'BACKSPACE') to xpath:/html/body/div/div/div[1]/div[1]/form/textarea element.</msg>
+<msg timestamp="20221028 10:06:37.179" level="INFO">Pressing special key CONTROL down.</msg>
+<msg timestamp="20221028 10:06:37.182" level="INFO">Sending key a</msg>
+<msg timestamp="20221028 10:06:37.184" level="INFO">Releasing special key CONTROL.</msg>
+<msg timestamp="20221028 10:06:37.198" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20221028 10:06:37.200" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20221028 10:06:36.763" endtime="20221028 10:06:37.218"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p</arg>
 <arg>${kuvauspuuttuminen_virhe}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20221026 12:48:40.878" level="INFO">Element 'xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p' contains text 'Description is required.'.</msg>
-<status status="PASS" starttime="20221026 12:48:40.848" endtime="20221026 12:48:40.880"/>
+<msg timestamp="20221028 10:06:37.247" level="INFO">Element 'xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p' contains text 'Description is required.'.</msg>
+<status status="PASS" starttime="20221028 10:06:37.219" endtime="20221028 10:06:37.249"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div/div[1]/div[1]/form/div/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221028 10:06:37.250" level="INFO">Clicking button 'xpath:/html/body/div/div/div[1]/div[1]/form/div/button[1]'.</msg>
+<status status="PASS" starttime="20221028 10:06:37.249" endtime="20221028 10:06:37.321"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div/div[1]/div[1]/form</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221028 10:06:37.353" level="INFO">Element 'xpath:/html/body/div/div/div[1]/div[1]/form' is displayed.</msg>
+<status status="PASS" starttime="20221028 10:06:37.322" endtime="20221028 10:06:37.357"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221026 12:48:40.882" endtime="20221026 12:48:43.064"/>
+<status status="PASS" starttime="20221028 10:06:37.358" endtime="20221028 10:06:39.536"/>
 </kw>
 <doc>Tyhjennetään projektin kuvaus ja testataan saadaanko oikeanlainen virheilmoitus</doc>
-<status status="PASS" starttime="20221026 12:48:35.958" endtime="20221026 12:48:43.065"/>
+<status status="PASS" starttime="20221028 10:06:32.377" endtime="20221028 10:06:39.537"/>
 </test>
-<test id="s1-s1-s1-t5" name="Projektien haun epäonnistuminen" line="72">
+<test id="s1-s1-s1-t5" name="Projektien haun epäonnistuminen" line="88">
 <kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
 <arg>${url_projektit}</arg>
 <arg>Chrome</arg>
 <arg>executable_path=C:/Users/jompp/Desktop/ohjelmistotestaus/ohjelmistotestaus_lp/robot_tests/chromedriver.exe</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221026 12:48:43.072" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/projects/'.</msg>
-<status status="PASS" starttime="20221026 12:48:43.070" endtime="20221026 12:48:44.888"/>
+<msg timestamp="20221028 10:06:39.543" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/projects/'.</msg>
+<status status="PASS" starttime="20221028 10:06:39.542" endtime="20221028 10:06:41.351"/>
 </kw>
 <kw name="Terminate All Processes" library="Process">
 <doc>Terminates all still running processes started by this library.</doc>
-<status status="PASS" starttime="20221026 12:48:44.889" endtime="20221026 12:48:44.890"/>
+<status status="PASS" starttime="20221028 10:06:41.353" endtime="20221028 10:06:41.354"/>
 </kw>
 <kw name="Start Process" library="Process">
 <arg>python</arg>
 <arg>C:/Users/jompp/Desktop/ohjelmistotestaus/ohjelmistotestaus_lp/robot_tests/closeApi.py</arg>
 <doc>Starts a new process on background.</doc>
-<msg timestamp="20221026 12:48:44.892" level="INFO">Starting process:
+<msg timestamp="20221028 10:06:41.356" level="INFO">Starting process:
 python C:/Users/jompp/Desktop/ohjelmistotestaus/ohjelmistotestaus_lp/robot_tests/closeApi.py</msg>
-<status status="PASS" starttime="20221026 12:48:44.891" endtime="20221026 12:48:44.905"/>
+<status status="PASS" starttime="20221028 10:06:41.355" endtime="20221028 10:06:41.371"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221028 10:06:46.376" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221028 10:06:41.372" endtime="20221028 10:06:46.378"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div/div</arg>
 <arg>30s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221026 12:48:44.906" endtime="20221026 12:48:58.244"/>
+<status status="PASS" starttime="20221028 10:06:46.379" endtime="20221028 10:06:54.668"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>xpath:/html/body/div/div/div/div/section/p</arg>
 <arg>${api_virhe}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20221026 12:48:58.269" level="INFO">Element 'xpath:/html/body/div/div/div/div/section/p' contains text 'There was an error retrieving the projects. Please try again.'.</msg>
-<status status="PASS" starttime="20221026 12:48:58.245" endtime="20221026 12:48:58.271"/>
+<msg timestamp="20221028 10:06:54.691" level="INFO">Element 'xpath:/html/body/div/div/div/div/section/p' contains text 'There was an error retrieving the projects. Please try again.'.</msg>
+<status status="PASS" starttime="20221028 10:06:54.668" endtime="20221028 10:06:54.694"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221026 12:48:58.272" endtime="20221026 12:49:00.445"/>
+<status status="PASS" starttime="20221028 10:06:54.694" endtime="20221028 10:06:56.849"/>
 </kw>
-<doc>Testataan saadaanko oikeanlainen virheilmoitus kun apiin ei saada yhteyttä tai projekteja ei muutenvaan voida hakea, tätä testiä varten täytyy sulkea api</doc>
-<status status="PASS" starttime="20221026 12:48:43.067" endtime="20221026 12:49:00.446"/>
+<doc>Testataan saadaanko oikeanlainen virheilmoitus kun apiin ei saada yhteyttä tai projekteja ei muutenvaan voida hakea</doc>
+<status status="PASS" starttime="20221028 10:06:39.540" endtime="20221028 10:06:56.850"/>
 </test>
 <kw name="Terminate All Processes" library="Process" type="TEARDOWN">
 <doc>Terminates all still running processes started by this library.</doc>
-<status status="PASS" starttime="20221026 12:49:00.450" endtime="20221026 12:49:00.451"/>
+<status status="PASS" starttime="20221028 10:06:56.853" endtime="20221028 10:06:56.854"/>
 </kw>
 <doc>Järjestelmätestaus jossa pyrittään löytämään mahdollisia virhetilanteita.</doc>
-<status status="PASS" starttime="20221026 12:48:10.054" endtime="20221026 12:49:00.451"/>
+<status status="PASS" starttime="20221028 10:06:06.283" endtime="20221028 10:06:56.855"/>
 </suite>
-<status status="PASS" starttime="20221026 12:48:10.048" endtime="20221026 12:49:00.457"/>
+<status status="PASS" starttime="20221028 10:06:06.277" endtime="20221028 10:06:56.861"/>
 </suite>
-<status status="PASS" starttime="20221026 12:48:10.015" endtime="20221026 12:49:00.461"/>
+<status status="PASS" starttime="20221028 10:06:06.242" endtime="20221028 10:06:56.865"/>
 </suite>
 <statistics>
 <total>

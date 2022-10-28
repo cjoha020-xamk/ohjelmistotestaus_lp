@@ -23,6 +23,10 @@ Budjetin virhesyöte
 
     Element Should Contain    xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p    Budget must be more than $0.
 
+    Click Button    xpath:/html/body/div/div/div[1]/div[1]/form/div/button[1]
+
+    Element Should Be Visible    xpath:/html/body/div/div/div[1]/div[1]/form
+
 Projektin nimen puuttuminen
 
     [Documentation]    Tyhjennetään projektin nimi ja tarkistetaan annetaanko oikea virheilmoitus nimen puuttumisesta
@@ -36,6 +40,10 @@ Projektin nimen puuttuminen
     Sleep    1s
 
     Element Should Contain    xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p    ${nimenpuuttuminen_virhe}
+
+    Click Button    xpath:/html/body/div/div/div[1]/div[1]/form/div/button[1]
+
+    Element Should Be Visible    xpath:/html/body/div/div/div[1]/div[1]/form
 
 Projektin nimi liian lyhyt
 
@@ -57,6 +65,10 @@ Projektin nimi liian lyhyt
 
     Element Should Contain    xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p    ${nimilyhyt_virhe}
 
+    Click Button    xpath:/html/body/div/div/div[1]/div[1]/form/div/button[1]
+
+    Element Should Be Visible    xpath:/html/body/div/div/div[1]/div[1]/form
+
 Projektin kuvauksen puuttuminen
 
     [Documentation]    Tyhjennetään projektin kuvaus ja testataan saadaanko oikeanlainen virheilmoitus
@@ -69,6 +81,10 @@ Projektin kuvauksen puuttuminen
 
     Element Should Contain    xpath:/html/body/div/div/div[1]/div[1]/form/div[1]/p    ${kuvauspuuttuminen_virhe}
 
+    Click Button    xpath:/html/body/div/div/div[1]/div[1]/form/div/button[1]
+
+    Element Should Be Visible    xpath:/html/body/div/div/div[1]/div[1]/form
+
 Projektien haun epäonnistuminen
 
     [Documentation]    Testataan saadaanko oikeanlainen virheilmoitus kun apiin ei saada yhteyttä tai projekteja ei muutenvaan voida hakea
@@ -76,6 +92,8 @@ Projektien haun epäonnistuminen
     Terminate All Processes
 
     Start Process    python    C:/Users/jompp/Desktop/ohjelmistotestaus/ohjelmistotestaus_lp/robot_tests/closeApi.py
+
+    Sleep    5s
 
     Wait Until Element Is Visible    xpath:/html/body/div/div/div/div    30s
 
